@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of [YOUR NAME] - Explore selected Web Development, WordPress, and Graphic Design projects.">
+  <meta name="keywords" content="Portfolio, Web Design Projects, WordPress Themes, UI UX Design, Branding Showcase">
+  <meta name="author" content="[YOUR NAME]">
+  <title>Portfolio &amp; Work — BANSH</title>
+
+  <!-- Google Fonts: DM Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..800;1,9..40,400..800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Font Awesome for Tech Brand Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom Main Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       HEADER / NAVIGATION
+       ========================================================================= -->
+  <header>
+    <nav class="navbar navbar-expand-lg site-navbar" id="mainNavbar">
+      <div class="container">
+        <!-- Logo / Name -->
+        <a class="navbar-brand" href="index.html">
+          <!-- [YOUR NAME] -->
+          <span>BANSH</span><span class="brand-dot">.</span>
+        </a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#portfolioNav" aria-controls="portfolioNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list fs-4"></i>
+        </button>
+
+        <!-- Navigation Links -->
+        <div class="collapse navbar-collapse" id="portfolioNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+              <a class="btn-custom btn-custom-primary" href="contact.html">
+                <span>Hire Me</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- =========================================================================
+       MAIN CONTENT
+       ========================================================================= -->
+  <main>
+
+    <!-- -----------------------------------------------------------------------
+         PORTFOLIO HERO BANNER
+         ----------------------------------------------------------------------- -->
+    <section class="page-hero-banner">
+      <div class="container">
+        <div class="row align-items-end justify-content-between">
+          <div class="col-lg-7">
+            <span class="eyebrow-label">Curated Portfolio</span>
+            <h1 class="section-title-large mb-3">Crafted With Intent &amp; Technical Precision</h1>
+            <p class="editorial-lead mb-0">
+              Explore 9 selected works spanning custom frontend development, bespoke WordPress platforms, and visual brand identity systems.
+            </p>
+          </div>
+          <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
+            <div class="d-inline-flex align-items-center gap-2 p-2 px-3 bg-surface-white border border-light rounded-1">
+              <i class="bi bi-folder-check text-accent-orange fs-5" style="color: var(--accent-orange);"></i>
+              <span class="small fw-semibold text-secondary">9 Active Case Studies</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         PORTFOLIO GRID WITH JAVASCRIPT FILTER
+         ----------------------------------------------------------------------- -->
+    <section class="section-padding">
+      <div class="container">
+
+        <!-- JavaScript Filter Buttons -->
+        <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-5">
+          <div class="filter-btn-group mb-0">
+            <button type="button" class="filter-btn active" data-filter="all">All Projects</button>
+            <button type="button" class="filter-btn" data-filter="web-development">Web Development</button>
+            <button type="button" class="filter-btn" data-filter="wordpress">WordPress</button>
+            <button type="button" class="filter-btn" data-filter="graphic-design">Graphic Design</button>
+          </div>
+          <span class="small text-muted d-none d-md-inline-block">Click "View Details" for in-depth breakdown</span>
+        </div>
+
+        <!-- Projects Grid Container -->
+        <div class="row g-4" id="portfolioGrid">
+
+          <!-- PROJECT 01: Aura Architecture (Web Development) -->
+          <div class="col-lg-4 col-md-6 portfolio-item" data-category="web-development">
+            <div class="project-card">
+              <div class="project-thumbnail-wrap">
+                <!-- [REPLACE WITH PROJECT IMAGE: assets/images/project-01.jpg] -->
+                <img src="assets/images/nexora-project-image.png" alt="Aura Architecture Website Showcase">
+                <div class="project-overlay">
+                  <button type="button" class="btn-custom btn-custom-white btn-sm py-2 px-3"
+                    data-bs-toggle="modal" 
+                    data-bs-target="#projectDetailsModal"
+                    data-title="Nexora Agency"
+                    data-category="Web Development Portfolio"
+                    data-image="assets/images/nexora-project-image.png"
+                    data-overview="A bespoke digital portfolio engineered for a contemporary Scandinavian architectural practice. Features smooth image transitions, project filtering by building category, and subtle editorial layout."
+                    data-role="Lead Frontend Developer &amp; UI Specialist"
+                    data-tech="HTML5, CSS3, JavaScript ES6, Bootstrap 5"
+                    data-features="Sub-second initial page load, custom interactive filter, responsive blueprints gallery, touch-enabled lightbox"
+                    data-live="https://bansh-live.github.io/nexora-portfolio/">
+                    <i class="bi bi-arrows-angle-expand"></i> View Details
+                  </button>
+                  <!-- [REPLACE WITH YOUR PROJECT LINK] -->
+                  <a href="https://bansh-live.github.io/nexora-portfolio/" target="_blank" rel="noopener noreferrer" class="btn-custom btn-custom-primary btn-sm py-2 px-3">
+                    <i class="bi bi-box-arrow-up-right"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="project-body">
+                <div>
+                  <div class="project-meta">
+                    <span class="project-category-tag">Web Development</span>
+                    <span class="project-num-tag">#01</span>
+                  </div>
+                  <h4 class="h5 fw-bold mb-2">Nexora Agency</h4>
+                  <p class="small text-secondary mb-3">Custom multi-page portfolio website with interactive project filtering and elegant typography.</p>
+                </div>
+                <div>
+                  <div class="project-tech-tags mb-3">
+                    <span class="tech-badge">HTML5</span>
+                    <span class="tech-badge">CSS3</span>
+                    <span class="tech-badge">Bootstrap 5</span>
+                    <span class="tech-badge">Vanilla JS</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 02: Botanica Organics Store (WordPress) -->
+          <div class="col-lg-4 col-md-6 portfolio-item" data-category="wordpress">
+            <div class="project-card">
+              <div class="project-thumbnail-wrap">
+                <!-- [REPLACE WITH PROJECT IMAGE: assets/images/project-02.jpg] -->
+                <img src="assets/images/fasion-portfolio-image.png" alt="fasion-portfolio-image">
+                <div class="project-overlay">
+                  <button type="button" class="btn-custom btn-custom-white btn-sm py-2 px-3"
+                    data-bs-toggle="modal" 
+                    data-bs-target="#projectDetailsModal"
+                    data-title="Fashion store E-Commerce"
+                    data-category="WordPress &amp; WooCommerce"
+                    data-image="assets/images/fasion-portfolio-image.png"
+                    data-overview="A conversion-focused organic fashion store powered by WooCommerce. Custom Elementor templates were designed for unique bundle builders, subscription orders, and rapid checkout."
+                    data-role="WordPress &amp; WooCommerce Developer"
+                    data-tech="WordPress, WooCommerce, Elementor Pro, CSS3"
+                    data-features="Automated abandoned cart recovery, Stripe payment gateway, custom ingredients drawer, dynamic review widgets"
+                    data-live="https://fasion-jwyq4i7zg-kbansh905-1355s-projects.vercel.app/#/">
+                    <i class="bi bi-arrows-angle-expand"></i> View Details
+                  </button>
+                  <!-- [REPLACE WITH YOUR PROJECT LINK] -->
+                  <a href="https://fasion-jwyq4i7zg-kbansh905-1355s-projects.vercel.app/#/" target="_blank" rel="noopener noreferrer" class="btn-custom btn-custom-primary btn-sm py-2 px-3">
+                    <i class="bi bi-box-arrow-up-right"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="project-body">
+                <div>
+                  <div class="project-meta">
+                    <span class="project-category-tag">WordPress</span>
+                    <span class="project-num-tag">#02</span>
+                  </div>
+                  <h4 class="h5 fw-bold mb-2">Fashion Store</h4>
+                  <p class="small text-secondary mb-3">High-converting WooCommerce store with customized product layouts and smooth checkout flow.</p>
+                </div>
+                <div>
+                  <div class="project-tech-tags mb-3">
+                    <span class="tech-badge">WordPress</span>
+                    <span class="tech-badge">WooCommerce</span>
+                    <span class="tech-badge">Elementor Pro</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 03: Kanso Coffee Roasters (Graphic Design) -->
+          <div class="col-lg-4 col-md-6 portfolio-item" data-category="graphic-design">
+            <div class="project-card">
+              <div class="project-thumbnail-wrap">
+                <!-- [REPLACE WITH PROJECT IMAGE: assets/images/project-03.jpg] -->
+                <img src="assets/images/logo-design-1.png" alt="lg-designer-logo">
+                <div class="project-overlay">
+                  <button type="button" class="btn-custom btn-custom-white btn-sm py-2 px-3"
+                    data-bs-toggle="modal" 
+                    data-bs-target="#projectDetailsModal"
+                    data-title="Logo design"
+                    data-category="Graphic Design &amp; Brand Identity"
+                    data-image="assets/images/logo-design-1.png"
+                    data-overview="Comprehensive brand identity package for an artisanal specialty coffee roastery based in Kyoto and Seattle. Includes custom logo mark, typography guidelines, biodegradable pouch packaging, and cafe menus."
+                    data-role="Brand Identity Designer &amp; Illustrator"
+                    data-tech="Figma, Adobe Illustrator, Adobe Photoshop"
+                    data-features="Vector brand guidelines book, 3D packaging mockups, social media post templates, print-ready stationery"
+                    data-live="https://example.com/demo-kanso">
+                    <i class="bi bi-arrows-angle-expand"></i> View Details
+                  </button>
+                  <a href="https://example.com/demo-kanso" target="_blank" rel="noopener noreferrer" class="btn-custom btn-custom-primary btn-sm py-2 px-3">
+                    <i class="bi bi-box-arrow-up-right"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="project-body">
+                <div>
+                  <div class="project-meta">
+                    <span class="project-category-tag">Graphic Design</span>
+                    <span class="project-num-tag">#03</span>
+                  </div>
+                  <h4 class="h5 fw-bold mb-2">Logo Design</h4>
+                  <p class="small text-secondary mb-3">Complete visual identity system including vector logo mark, packaging design, and stationery.</p>
+                </div>
+                <div>
+                  <div class="project-tech-tags mb-3">
+                    <span class="tech-badge">Illustrator</span>
+                    <span class="tech-badge">Photoshop</span>
+                    <span class="tech-badge">Figma</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 04: Nova FinTech Analytics Dashboard (Web Development) -->
+          <div class="col-lg-4 col-md-6 portfolio-item" data-category="web-development">
+            <div class="project-card">
+              <div class="project-thumbnail-wrap">
+                <!-- [REPLACE WITH PROJECT IMAGE: assets/images/project-04.jpg] -->
+                <img src="assets/images/nature-project-image.png" alt="nature-project-image">
+                <div class="project-overlay">
+                  <button type="button" class="btn-custom btn-custom-white btn-sm py-2 px-3"
+                    data-bs-toggle="modal" 
+                    data-bs-target="#projectDetailsModal"
+                    data-title="Nature project"
+                    data-category="Web Development"
+                    data-image="assets/images/nature-project-image.png"
+                    data-overview="A clean, responsive Nature website frontend built with Bootstrap 5 and vanilla JavaScript. Includes responsive transaction tables, custom metric charts, and dark/light mode toggles."
+                    data-role="Frontend UI Developer"
+                    data-tech="HTML5, CSS3, Bootstrap 5, JavaScript"
+                    data-features="Interactive chart components, data table search &amp; filter, customizable widget cards, mobile collapsed sidebar"
+                    data-live="https://bansh-live.github.io/nature/">
+                    <i class="bi bi-arrows-angle-expand"></i> View Details
+                  </button>
+                  <a href="https://bansh-live.github.io/nature/" target="_blank" rel="noopener noreferrer" class="btn-custom btn-custom-primary btn-sm py-2 px-3">
+                    <i class="bi bi-box-arrow-up-right"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="project-body">
+                <div>
+                  <div class="project-meta">
+                    <span class="project-category-tag">Web Development</span>
+                    <span class="project-num-tag">#04</span>
+                  </div>
+                  <h4 class="h5 fw-bold mb-2">Nature Project</h4>
+                  <p class="small text-secondary mb-3">making a nature website with simple and userfriendly interface. Explore Nature. </p>
+                </div>
+                <div>
+                  <div class="project-tech-tags mb-3">
+                    <span class="tech-badge">HTML5</span>
+                    <span class="tech-badge">CSS3</span>
+                    <span class="tech-badge">Bootstrap 5</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 05: Maison Minimalist Lifestyle Journal (WordPress) -->
+          <div class="col-lg-4 col-md-6 portfolio-item" data-category="wordpress">
+            <div class="project-card">
+              <div class="project-thumbnail-wrap">
+                <!-- [REPLACE WITH PROJECT IMAGE: assets/images/project-05.jpg] -->
+                <img src="assets/images/Funqro-website-image.png" alt="Funqro-website-image">
+                <div class="project-overlay">
+                  <button type="button" class="btn-custom btn-custom-white btn-sm py-2 px-3"
+                    data-bs-toggle="modal" 
+                    data-bs-target="#projectDetailsModal"
+                    data-title="Funqro Event Management"
+                    data-category="WordPress"
+                    data-image="assets/images/Funqro-website-image.png"
+                    data-overview="An editorial WordPress publication tailored for interior architecture critics and lifestyle essays. Built with custom Gutenberg blocks and dynamic archive templates."
+                    data-role="WordPress Developer &amp; Theme Architect"
+                    data-tech="WordPress, Elementor, Custom CSS,"
+                    data-features="Custom editorial reading progress bar, newsletter subscription popover, dynamic related articles algorithm"
+                    data-live="https://funqro.com/">
+                    <i class="bi bi-arrows-angle-expand"></i> View Details
+                  </button>
+                  <a href="https://funqro.com/" target="_blank" rel="noopener noreferrer" class="btn-custom btn-custom-primary btn-sm py-2 px-3">
+                    <i class="bi bi-box-arrow-up-right"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="project-body">
+                <div>
+                  <div class="project-meta">
+                    <span class="project-category-tag">WordPress</span>
+                    <span class="project-num-tag">#05</span>
+                  </div>
+                  <h4 class="h5 fw-bold mb-2">Funqro Event Management</h4>
+                  <p class="small text-secondary mb-3">Editorial publishing platform with custom typography styles, article carousels, and newsletter integration.</p>
+                </div>
+                <div>
+                  <div class="project-tech-tags mb-3">
+                    <span class="tech-badge">WordPress</span>
+                    <span class="tech-badge">Elementor</span>
+                    <span class="tech-badge">Custom CSS</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 06: Solstice Festival Identity (Graphic Design) -->
+          <div class="col-lg-4 col-md-6 portfolio-item" data-category="graphic-design">
+            <div class="project-card">
+              <div class="project-thumbnail-wrap">
+                <!-- [REPLACE WITH PROJECT IMAGE: assets/images/project-06.jpg] -->
+                <img src="assets/images/start-sports-logo.jpeg" alt="start-sports-logo">
+                <div class="project-overlay">
+                  <button type="button" class="btn-custom btn-custom-white btn-sm py-2 px-3"
+                    data-bs-toggle="modal" 
+                    data-bs-target="#projectDetailsModal"
+                    data-title="StarSport Logo"
+                    data-category="Graphic Design"
+                    data-image="assets/images/start-sports-logo.jpeg"
+                    data-overview="Identity system and environmental graphics for an international design. Included large format posters, wristbands, lanyard credentials, and social campaign assets."
+                    data-role="Visual Designer &amp; Art Director"
+                    data-tech="Adobe Illustrator, Photoshop, Figma"
+                    data-features="Modular grid layout system, custom display vector typography, social media motion graphics kit"
+                    data-live="https://example.com/demo-solstice">
+                    <i class="bi bi-arrows-angle-expand"></i> View Details
+                  </button>
+                  <a href="https://example.com/demo-solstice" target="_blank" rel="noopener noreferrer" class="btn-custom btn-custom-primary btn-sm py-2 px-3">
+                    <i class="bi bi-box-arrow-up-right"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="project-body">
+                <div>
+                  <div class="project-meta">
+                    <span class="project-category-tag">Graphic Design</span>
+                    <span class="project-num-tag">#06</span>
+                  </div>
+                  <h4 class="h5 fw-bold mb-2">StarSport Logo</h4>
+                  <p class="small text-secondary mb-3">Event visual identity comprising vector posters, merchandise apparel, and social promo assets.</p>
+                </div>
+                <div>
+                  <div class="project-tech-tags mb-3">
+                    <span class="tech-badge">Illustrator</span>
+                    <span class="tech-badge">Photoshop</span>
+                    <span class="tech-badge">Print Design</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 07: Apex Athletics Hub (Web Development) -->
+          <div class="col-lg-4 col-md-6 portfolio-item" data-category="web-development">
+            <div class="project-card">
+              <div class="project-thumbnail-wrap">
+                <!-- [REPLACE WITH PROJECT IMAGE: assets/images/project-07.jpg] -->
+                <img src="assets/images/ember-and-flame.png" alt="ember-and-flame">
+                <div class="project-overlay">
+                  <button type="button" class="btn-custom btn-custom-white btn-sm py-2 px-3"
+                    data-bs-toggle="modal" 
+                    data-bs-target="#projectDetailsModal"
+                    data-title="Ember&Flame"
+                    data-category="Web Development / Membership Platform"
+                    data-image="assets/images/ember-and-flame.png"
+                    data-overview="A modern performance Resturant website featuring interactive class schedule filters, Menus, and Latest Dish. built with vanilla JS and Bootstrap."
+                    data-role="Frontend Engineer"
+                    data-tech="HTML5, CSS3, JavaScript, Bootstrap 5"
+                    data-features="Dynamic class filter timetable, trainer showcase modals, integrated Google Maps and booking forms"
+                    data-live="https://ember-flame-kappa.vercel.app/">
+                    <i class="bi bi-arrows-angle-expand"></i> View Details
+                  </button>
+                  <a href="https://ember-flame-kappa.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-custom btn-custom-primary btn-sm py-2 px-3">
+                    <i class="bi bi-box-arrow-up-right"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="project-body">
+                <div>
+                  <div class="project-meta">
+                    <span class="project-category-tag">Web Development</span>
+                    <span class="project-num-tag">#07</span>
+                  </div>
+                  <h4 class="h5 fw-bold mb-2"> Ember&Flame </h4>
+                  <p class="small text-secondary mb-3">Fitness hub website with interactive weekly schedule filtering and fast booking form workflows.</p>
+                </div>
+                <div>
+                  <div class="project-tech-tags mb-3">
+                    <span class="tech-badge">HTML5</span>
+                    <span class="tech-badge">Bootstrap 5</span>
+                    <span class="tech-badge">Vanilla JS</span>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center pt-2 border-top border-light-subtle">
+                    <button type="button" class="link-arrow text-primary border-0 bg-transparent p-0"
+                      data-bs-toggle="modal" 
+                      data-bs-target="#projectDetailsModal"
+                      data-title="Apex Athletics Performance Hub"
+                      data-category="Web Development / Membership Platform"
+                      data-image="https://images.pexels.com/photos/1279109/pexels-photo-1279109.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"
+                      data-overview="A modern performance gym website featuring interactive class schedule filters, membership calculators, and coach profile showcases built with vanilla JS and Bootstrap."
+                      data-role="Frontend Engineer"
+                      data-tech="HTML5, CSS3, JavaScript, Bootstrap 5"
+                      data-features="Dynamic class filter timetable, trainer showcase modals, integrated Google Maps and booking forms"
+                      data-live="https://ember-flame-kappa.vercel.app/">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 08: Lumin Modern Lighting E-Store (WordPress) -->
+          <div class="col-lg-4 col-md-6 portfolio-item" data-category="wordpress">
+            <div class="project-card">
+              <div class="project-thumbnail-wrap">
+                <!-- [REPLACE WITH PROJECT IMAGE: assets/images/project-08.jpg] -->
+                <img src="assets/images/billo.png" alt="billo">
+                <div class="project-overlay">
+                  <button type="button" class="btn-custom btn-custom-white btn-sm py-2 px-3"
+                    data-bs-toggle="modal" 
+                    data-bs-target="#projectDetailsModal"
+                    data-title="Billo a Agency"
+                    data-category="WordPress / E-Commerce"
+                    data-image="assets/images/billo.png"
+                    data-overview="An e-commerce website for bespoke architectural lighting fixtures. Custom WooCommerce product variation switches, 360-degree product galleries, and CAD spec download drawers."
+                    data-role="WordPress &amp; Elementor Specialist"
+                    data-tech="WordPress, WooCommerce, Elementor, CSS3"
+                    data-features="Variation color swatches, architect trade portal login, fast 1-click checkout"
+                    data-live="https://billo-rosy.vercel.app/index.html">
+                    <i class="bi bi-arrows-angle-expand"></i> View Details
+                  </button>
+                  <a href="https://billo-rosy.vercel.app/index.html" target="_blank" rel="noopener noreferrer" class="btn-custom btn-custom-primary btn-sm py-2 px-3">
+                    <i class="bi bi-box-arrow-up-right"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="project-body">
+                <div>
+                  <div class="project-meta">
+                    <span class="project-category-tag">WordPress</span>
+                    <span class="project-num-tag">#08</span>
+                  </div>
+                  <h4 class="h5 fw-bold mb-2">Billo a Agency</h4>
+                  <p class="small text-secondary mb-3">Customized a Digital agency .</p>
+                </div>
+                <div>
+                  <div class="project-tech-tags mb-3">
+                    <span class="tech-badge">WordPress</span>
+                    <span class="tech-badge">WooCommerce</span>
+                    <span class="tech-badge">Elementor</span>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center pt-2 border-top border-light-subtle">
+                    <button type="button" class="link-arrow text-primary border-0 bg-transparent p-0"
+                      data-bs-toggle="modal" 
+                      data-bs-target="#projectDetailsModal"
+                      data-title="Lumin Modern Lighting Studio"
+                      data-category="WordPress / E-Commerce"
+                      data-image="assets/images/billo.png"
+                      data-overview="An e-commerce website for bespoke architectural lighting fixtures. Custom WooCommerce product variation switches, 360-degree product galleries, and CAD spec download drawers."
+                      data-role="WordPress &amp; Elementor Specialist"
+                      data-tech="WordPress, WooCommerce, Elementor, CSS3"
+                      data-features="Variation color swatches, architect trade portal login, fast 1-click checkout"
+                      data-live="https://example.com/demo-lumin">
+                    </button>+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 09: Vantage Venture Capital (Graphic Design) -->
+          <div class="col-lg-4 col-md-6 portfolio-item" data-category="graphic-design">
+            <div class="project-card">
+              <div class="project-thumbnail-wrap">
+                <!-- [REPLACE WITH PROJECT IMAGE: assets/images/project-09.jpg] -->
+                <img src="https://images.pexels.com/photos/4466116/pexels-photo-4466116.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" alt="Vantage Venture Capital Brand System Showcase">
+                <div class="project-overlay">
+                  <button type="button" class="btn-custom btn-custom-white btn-sm py-2 px-3"
+                    data-bs-toggle="modal" 
+                    data-bs-target="#projectDetailsModal"
+                    data-title="Vantage Ventures Brand System"
+                    data-category="Graphic Design &amp; Corporate Identity"
+                    data-image="https://images.pexels.com/photos/4466116/pexels-photo-4466116.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"
+                    data-overview="Executive visual branding and investor report templates designed for a sustainable technology seed fund. Included letterhead stationery, annual report PDF layouts, and digital brand style guidelines."
+                    data-role="Senior Graphic Designer"
+                    data-tech="Adobe InDesign, Illustrator, Photoshop"
+                    data-features="Editorial typography hierarchy, clean infographic data charts, foil-stamp stationery mockups"
+                    data-live="https://example.com/demo-vantage">
+                    <i class="bi bi-arrows-angle-expand"></i> View Details
+                  </button>
+                  <a href="https://example.com/demo-vantage" target="_blank" rel="noopener noreferrer" class="btn-custom btn-custom-primary btn-sm py-2 px-3">
+                    <i class="bi bi-box-arrow-up-right"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="project-body">
+                <div>
+                  <div class="project-meta">
+                    <span class="project-category-tag">Graphic Design</span>
+                    <span class="project-num-tag">#09</span>
+                  </div>
+                  <h4 class="h5 fw-bold mb-2">Vantage Ventures Identity</h4>
+                  <p class="small text-secondary mb-3">Corporate visual identity, pitch deck design, and annual sustainability reports.</p>
+                </div>
+                <div>
+                  <div class="project-tech-tags mb-3">
+                    <span class="tech-badge">Figma</span>
+                    <span class="tech-badge">Illustrator</span>
+                    <span class="tech-badge">InDesign</span>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center pt-2 border-top border-light-subtle">
+                    <button type="button" class="link-arrow text-primary border-0 bg-transparent p-0"
+                      data-bs-toggle="modal" 
+                      data-bs-target="#projectDetailsModal"
+                      data-title="Vantage Ventures Brand System"
+                      data-category="Graphic Design &amp; Corporate Identity"
+                      data-image="https://images.pexels.com/photos/4466116/pexels-photo-4466116.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"
+                      data-overview="Executive visual branding and investor report templates designed for a sustainable technology seed fund. Included letterhead stationery, annual report PDF layouts, and digital brand style guidelines."
+                      data-role="Senior Graphic Designer"
+                      data-tech="Adobe InDesign, Illustrator, Photoshop"
+                      data-features="Editorial typography hierarchy, clean infographic data charts, foil-stamp stationery mockups"
+                      data-live="https://example.com/demo-vantage">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         CTA SECTION
+         ----------------------------------------------------------------------- -->
+    <section class="section-padding bg-dark-custom text-white">
+      <div class="container text-center max-w-700 mx-auto" style="max-width: 700px;">
+        <span class="eyebrow-label" style="color: var(--accent-orange);">Collaborate With Me</span>
+        <h2 class="display-6 fw-bold mb-3 text-white">Have An Ambitious Project In Mind?</h2>
+        <p class="lead mb-4" style="color: #BBBBBB;">Let's turn your concept into a refined, high-performing digital platform.</p>
+        <a href="contact.html" class="btn-custom btn-custom-primary btn-lg">
+          <span>Get In Touch</span>
+          <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       PROJECT DETAILS BOOTSTRAP MODAL
+       ========================================================================= -->
+  <div class="modal fade" id="projectDetailsModal" tabindex="-1" aria-labelledby="modalProjectTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content modal-content-custom">
+        <div class="modal-header modal-header-custom">
+          <div>
+            <span class="badge text-bg-light border small text-uppercase mb-1" id="modalProjectCategory">Web Development</span>
+            <h3 class="modal-title h4 fw-bold mb-0" id="modalProjectTitle">Project Title</h3>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body modal-body-custom">
+          <!-- Modal Project Large Image -->
+          <img src="https://images.pexels.com/photos/8534244/pexels-photo-8534244.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" alt="Project Large Preview" id="modalProjectImage" class="modal-project-img img-fluid">
+
+          <div class="row g-4 mb-4">
+            <div class="col-md-7">
+              <h5 class="fw-bold mb-2">Project Overview</h5>
+              <p class="text-secondary small mb-3" id="modalProjectOverview">Detailed project overview description goes here.</p>
+              
+              <h5 class="fw-bold mb-2">Key Features Delivered</h5>
+              <p class="text-secondary small mb-0" id="modalProjectFeatures">Key features and functionality list.</p>
+            </div>
+            <div class="col-md-5">
+              <div class="p-3 bg-muted-custom rounded-1">
+                <div class="mb-3">
+                  <span class="text-muted small fw-bold text-uppercase d-block mb-1">My Role</span>
+                  <span class="fw-semibold text-dark small" id="modalProjectRole">Lead Frontend Developer &amp; UI Designer</span>
+                </div>
+                <div class="mb-3">
+                  <span class="text-muted small fw-bold text-uppercase d-block mb-1">Technologies</span>
+                  <span class="fw-semibold text-dark small" id="modalProjectTech">HTML5, CSS3, JavaScript, Bootstrap 5</span>
+                </div>
+                <div>
+                  <span class="text-muted small fw-bold text-uppercase d-block mb-1">Client Feedback</span>
+                  <span class="text-secondary small fst-italic">"Delivered exceptional quality on time with flawless attention to detail."</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer border-top border-light-subtle d-flex justify-content-between">
+          <button type="button" class="btn-custom btn-custom-outline btn-sm" data-bs-dismiss="modal">Close Window</button>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="btn-custom btn-custom-primary btn-sm" id="modalProjectLiveBtn">
+            <span>View Live Project</span>
+            <i class="bi bi-box-arrow-up-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ <!-- =========================================================================
+       FOOTER
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-5">
+        <!-- Brand & Bio -->
+        <div class="col-lg-4">
+          <a class="footer-brand d-inline-block mb-3" href="index.html">
+            <span>BANSH</span><span style="color: var(--accent-orange);">.</span>
+          </a>
+          <p class="small mb-4" style="color: #A3A3A3;">
+            Web Developer, WordPress Specialist &amp; Graphic Designer crafting thoughtful digital experiences with clean code and human-centered design.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://github.com/bansh-live" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub Profile">
+              <i class="bi bi-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/bansh-choudhary-53068441b/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn Profile">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Instagram Profile">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://wa.me/7650006788" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="WhatsApp Contact">
+              <i class="bi bi-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="col-6 col-lg-2 offset-lg-1">
+          <h6 class="text-white fw-bold text-uppercase small mb-3 letter-spacing-1">Navigation</h6>
+          <ul class="footer-link-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Expertise Links -->
+        <div class="col-6 col-lg-2">
+          <h6 class="text-white fw-bold text-uppercase small mb-3 letter-spacing-1">Expertise</h6>
+          <ul class="footer-link-list">
+            <li><a href="services.html">Web Development</a></li>
+            <li><a href="services.html">WordPress &amp; Elementor</a></li>
+            <li><a href="services.html">Graphic &amp; Brand Design</a></li>
+            <li><a href="services.html">E-Commerce Websites</a></li>
+            <li><a href="services.html">Website Maintenance</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Quick Info -->
+        <div class="col-lg-3">
+          <h6 class="text-white fw-bold text-uppercase small mb-3 letter-spacing-1">Get In Touch</h6>
+          <p class="small mb-2" style="color: #A3A3A3;">Feel free to reach out directly via email or phone:</p>
+          <p class="mb-1"><a href="mailto:alex.morgan@example.com" class="text-white fw-semibold small"><i class="bi bi-envelope me-2" style="color: var(--accent-orange);"></i>bansthakur113@gmail.com</a></p>
+          <p class="mb-1"><a href="tel:+1234567890" class="text-white fw-semibold small"><i class="bi bi-telephone me-2" style="color: var(--accent-orange);"></i>+91 7650006788</a></p>
+          <p class="small mb-0 mt-2" style="color: #888888;"><i class="bi bi-geo-alt me-2" style="color: var(--accent-orange);"></i>India HP Dharmshala (Open Worldwide)</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <div>
+          &copy; 2026 <strong class="text-white">BANSH</strong>. All rights reserved. Built with HTML5, CSS3, Bootstrap 5 &amp; Vanilla JS.
+        </div>
+        <div class="d-flex gap-4">
+          <a href="contact.html" class="text-secondary small">Privacy Policy</a>
+          <a href="contact.html" class="text-secondary small">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back To Top Button -->
+  <button id="backToTopBtn" class="back-to-top-btn" aria-label="Back to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom Master Script -->
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
